@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bo.seef.team.studentchat.MainActivity" android:layout_weight="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:padding="@dimen/mainActivity.paddingTitle"
+            android:textSize="@dimen/mainActivity.sizeTitleLogin"
+            android:text="@string/mainActivity.title_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="322dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="@string/mainActivity.login_with"
+            android:textSize="@dimen/mainActivity.sizeLoginWith"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_facebook"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
